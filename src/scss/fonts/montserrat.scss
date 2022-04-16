@@ -1,0 +1,22 @@
+@use '../custom/config' as cfg;
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('#{cfg.$MontserratPath}/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{cfg.$MontserratPath}/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: url('#{cfg.$MontserratPath}/Montserrat-Light.ttf') format('truetype');
+}
