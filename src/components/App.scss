@@ -1,6 +1,9 @@
+@use "bootstrap";
+
 @use '../scss/custom/colors' as color;
 
 body {
   background-color: color.$bg-color;
   font-family: 'Montserrat', sans-serif;
+  color: color.$gray;
 }
