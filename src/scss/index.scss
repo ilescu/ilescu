@@ -1,9 +1,11 @@
-//Fonts
+// Fonts
 @use "fonts/montserrat";
 
 // Bootstrap override
 @use "bootstrap/override";
 
+// Pages
+@use "pages/home";
 
 .bred {
   border: 1px solid red;

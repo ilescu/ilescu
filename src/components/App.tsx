@@ -2,16 +2,17 @@ import './App.scss'
 import Navigation from "./navigation/Navigation";
 import React from "react";
 import RoutesList from "./routes/RoutesList";
+import {Container} from "react-bootstrap";
 
 function App() {
 
     return (
-        <div className="App" style={{textAlign: 'center'}}>
+        <Container>
             <Navigation/>
-            <div style={{marginTop: '50px'}}>
+            <div style={{marginTop: '30px'}}>
                 <RoutesList/>
             </div>
-        </div>
+        </Container>
     )
 }
 
