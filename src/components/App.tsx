@@ -5,7 +5,6 @@ import RoutesList from "./routes/RoutesList";
 import {Container} from "react-bootstrap";
 
 function App() {
-
     return (
         <Container>
             <Navigation/>

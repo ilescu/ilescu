@@ -20,7 +20,17 @@
     font-weight: 800;
   }
   &__name {
-    color: color.$red;
+    box-shadow: 0 12px 10px 0 rgba(0,0,0,0.11);
+    background: linear-gradient(127deg, rgba(29,31,36,1) 27%, rgba(37,41,44,1) 100%);
+    padding: 4px 8px;
+    color: teal;
+    transition: all .5s;
+    border-radius: 5px;
+    &:hover {
+      color: #e9a112;
+      box-shadow: 0 3px 20px 1px rgba(209, 113, 22, 0.5);
+      transition: all .5s;
+    }
   }
   &__social {
     h3 {
@@ -34,9 +44,10 @@
     &--github {
       svg {
         background: linear-gradient(127deg, rgba(29,31,36,1) 27%, rgba(37,41,44,1) 100%);
-        fill: rgba(123,74,236,1);
+        fill: rgb(114, 67, 220);
         transition: all .6s;
         border-radius: 5px;
+        box-shadow: 0 12px 10px 0 rgba(0,0,0,0.11);
         &:hover {
           box-shadow: 0 3px 20px 1px rgba(123,74,236,0.50);
           background: linear-gradient(137deg, rgba(38,30,216,1) 0%, rgba(123,74,236,1) 46%, rgba(134,28,164,1) 100%);
@@ -52,6 +63,7 @@
         fill: rgba(57,125,236,1);
         transition: all .6s;
         border-radius: 5px;
+        box-shadow: 0 12px 10px 0 rgba(0,0,0,0.11);
         &:hover {
           box-shadow: 0 3px 20px 1px rgba(57,125,236,0.50);
           background: linear-gradient(127deg, rgba(57,125,236,1) 27%, rgba(12,47,146,1) 100%);
@@ -67,6 +79,7 @@
         fill: rgb(255, 101, 46);
         transition: all .6s;
         border-radius: 5px;
+        box-shadow: 0 12px 10px 0 rgba(0,0,0,0.11);
         &:hover {
           box-shadow: 0 3px 20px 1px rgba(255, 162, 88, 0.3);
           background: linear-gradient(0deg, rgba(255,69,0,1) 0%, rgba(255,114,62,1) 100%);
@@ -141,3 +154,29 @@
   background: transparent;
   @include mix.default-style;
 }
+
+.gradient-canvas {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: -1;
+  background: radial-gradient(circle, rgba(252, 17, 83, 0.5) 0%, rgba(33,36,40,1) 60%);
+  box-shadow: 0 10px 24px 11px rgba(0, 0, 0, 0.2);
+  animation: gradient-canvas-animation .6s;
+  opacity: 1;
+}
+
+@keyframes gradient-canvas-animation {
+  0% {
+    background: radial-gradient(circle, rgba(252, 17, 83, 0.5) 0%, rgba(33,36,40,1) 0%);
+    box-shadow: 0 10px 24px 11px rgba(0, 0, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    background: radial-gradient(circle, rgba(252, 17, 83, 0.5) 0%, rgba(33,36,40,1) 60%);
+    box-shadow: 0 10px 24px 11px rgba(0, 0, 0, 0.2);
+  }
+}
+
