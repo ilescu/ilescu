@@ -2,6 +2,7 @@ import React from 'react';
 import {Col, Row} from "react-bootstrap";
 import Canvas from "@/components/canvas/Canvas";
 import {HomeEffect} from "@/components/canvas/effects/HomeEffect";
+import Slider from "@/components/canvas/effects/Slider";
 
 const Home = () => {
     return (
@@ -54,17 +55,11 @@ const Home = () => {
                     </div>
                 </Col>
                 <Col lg={6} className="d-flex justify-content-center">
-                    <div className="gradient-canvas">
-                        <div id="react">
-                            <div id="react-inner">
+                    <div className="gradient-canvas d-flex align-items-center">
 
-                            </div>
-                            <div id="react-innerdot">
-
-                            </div>
-                        </div>
                     </div>
-                   <Canvas draw={HomeEffect} width={500} height={500}/>
+                    <Slider/>
+                   <Canvas style={{zIndex: '2'}} draw={HomeEffect} width={500} height={500}/>
                 </Col>
             </Row>
             <hr className="mt-5"/>

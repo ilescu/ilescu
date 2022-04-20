@@ -1,0 +1,23 @@
+.swiper {
+    margin: 100px auto;
+    width: 390px;
+    height: 390px;
+    border-radius: 50%;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    img {
+        width: 40%;
+    }
+}
+
+.mySwiper {
+    position: absolute;
+    margin-top: 3.8%;
+}
